@@ -3,7 +3,8 @@ const http = require('http');
 
 //This function is called everytime a request reaches our server
 const server = http.createServer((req, res) => {
-    console.log(req)
+    console.log(req);
+    process.exit();
 });
 
 //MAkes node.js listen for incoming requests
